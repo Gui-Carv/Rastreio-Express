@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rastreio Express</title>
+</head>
+
+<body>
+
+    <!-- Nav estilo menu on-scroll. Nesse trecho do codigo criei um header com uma nav, seguida de divs para a logo,
+      links e para os dois botoes da nav, dei uma classe para cada um para facilitar na estilizacao -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="/assets/img/logo.svg" alt="Logo Rastreio Xpress">
+                <h1>Rastreio Express</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#sobre-nos" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#parceiros" class="nav-link">Parceiros</a></li>
+                    <li class="nav-item"><a href="#ajuda" class="nav-link">Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+                <button><a href="#">Cadastrar</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Criei uma section para cada link da nav bar e atrelei o id da section ao nav-link, isso faz com que a 
+     section seja chamada quando clicarmos -->
+
+    <!-- Sessao Home. A section home possui duas divs responsaveis pelo titulo e pela parte de rastreio do site, 
+     onde tem um input e um botao para rastrear a encomenda -->
+    <section class="home" id="home">
+        <div class="section-title">
+            <h1>Rastreie seu Pedido!</h1>
+        </div>
+        <div class="rastreio">
+            <input type="text" placeholder="Código de rastreio">
+            <button><a href="#">RASTREAR</a></button>
+        </div>
+        <img src="/assets/img/boxes.svg" alt="Caixas verdes">
+    </section>
+
+    <!-- Sessao Sobre nos. A section possui divs para o titulo, container de cards e para uma sessao com texto e botao de cadastro. -->
+    <section class="sobre-nos" id="sobre-nos">
+        <div class="section-title">
+            <h1>Veja como o Rastreio Express pode facilitar sua rotina</h1>
+            <p>As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina
+                logística.</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="/assets/img/search.svg" alt="">
+                <div class="card-content">
+                    <h3>Busque por uma encomenda</h3>
+                    <p>Use o rastreio Express para encontrar suas encomendas. Basta colar o código de rastreio no campo
+                        de buscas e aproveitar.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/img/phone_loc.svg" alt="">
+                <div class="card-content">
+                    <h3>Acompanhe suas encomendas</h3>
+                    <p>O Rastreio Express foi desenvolvido para facilitar a visualização de suas encomendas. Nada de
+                        atualizações misteriosas e difíceis de entender.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/img/notification_bell.svg" alt="">
+                <div class="card-content">
+                    <h3>Receba notificações</h3>
+                    <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu
+                        e-mail.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sobre-nos-link">
+            <h2>O Rastrio Express foi desenvolvido especialmente para quem deseja usar uma ferramenta simples e
+                objetiva, sem enrolação.</h2>
+            <button><a href="#">Cadastre-se agora</a></button>
+        </div>
+    </section>
+
+    <!-- Sessão Parceiros -->
+    <section class="parceiros" id="parceiros">
+        <div class="parceiros-content">
+            <h1>A plataforma de rastreamento mais completa do mercado</h1>
+            <p>O Melhor Rastreio controla todos os envios postados na Azul Cargo Express e Correios</p>
+            <p>Porém, quem faz envios com etiquetas geradas na plataforma do Melhor Envio também consegue rastrear
+                encomendas enviadas pela Jadlog, Buslog, Via Brasil e LATAM Cargo.</p>
+        </div>
+        <img src="/assets/img/image_green_background.svg" alt="">
+    </section>
+
+    <!-- Sessão Ajuda -->
+    <section class="ajuda" id="ajuda">
+        <img src="/assets/img/need_help.svg" alt="">
+        <div class="ajuda-content">
+            <h1>Precisa de ajuda com algum rastreio?</h1>
+            <p>Veja o que fazer em cada um dos casos:</p>
+        </div>
+    </section>
+
+    <!-- A div help-tips é nada mais que um container de cards, optei por criar fora da section ajuda pois estava tendo problemas ao alinhar os elementos -->
+    <div class="help-tips">
+        <div class="tips">
+            <h3>Estou esperando uma encomenda</h3>
+            <p>O remetente é a única pessoa que pode resolver problemas relacionados ao rastreio.</p>
+            <p>Sugerimos que peça para a pessoa responsável pelo envio entrar em contato com a gente seguindo as instruções para lojistas</p>
+        </div>
+        <div class="tips">
+            <h3>Enviei um pacote com etiqueta do Melhor Envio</h3>
+            <p>É muito fácil encontrar ajuda. Veja só:</p>
+            <ul>
+                <li>Entre na sua conta Melhor Envio</li>
+                <li>Vá até a opção Ajuda</li>
+                <li>Escolha o assunto que melhor representa sua dúvida e encontre o suporte que precisa</li>
+            </ul>
+        </div>
+        <div class="tips">
+            <h3>Comprei uma etiqueta diretamente com a transportadora</h3>
+            <p>Sugerimos que entre em contato com a empresa responsável pelo envio.</p>
+        </div>
+        <div class="tips">
+            <h3>Eu vou pagar alguma taxa de uso ou mensalidade?</h3>
+            <p>Não! O Melhor Rastreio é totalmente gratuito e não cobra nenhuma mensalidade ou taxa pelos serviços.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© Rastreio Express, 2024 - Todos os direitos reservados.</p>
+    </footer>
+    
+
+</body>
+
+</html>
